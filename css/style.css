@@ -40,6 +40,37 @@ body {
     border-radius: 100vh;
 }
 
+.modal-title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    border: 2px solid #eee;
+    outline: none;
+}
+
+.modal-body button {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #a0a0a0bf;
+    padding: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    transition: .4s all ease;
+    border-radius: 5rem;
+}
+
+.modal-body button:hover {
+    background-color: purple;
+    color: #fff;
+}
+
 .logo {
     width: 90px;
 }
@@ -605,14 +636,14 @@ img.ss-code {
     display: inline-block;
 }
 
-.filters li span.num {
+/* .filters li span.num {
     font-size: 10px;
     top: -5px;
     right: -15px;
     text-align: left;
     position: absolute;
     font-size: .7em;
-}
+} */
 
 .filters li a.active {
     color: #66d9ed;
@@ -637,7 +668,7 @@ img.ss-code {
     overflow: hidden;
 }
 
-#projects img {
+#projects2 img {
     width: 100%;
     transition: 15s all ease;
     object-fit: cover;
@@ -658,7 +689,7 @@ img.ss-code {
     border-top-right-radius: 1rem;
 }
 
-#projects img:hover {
+#projects2 img:hover {
     transform: translateY(calc(-100% + 400px));
 }
 
@@ -884,4 +915,123 @@ a.cv {
     border: none;
     background-color: transparent;
     width: 100%;
+}
+
+.contact-right h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1201px) {
+    .project-img {
+        overflow: auto;
+    }
+
+    .circle-cursor {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    header {
+        padding: 1.5rem 0;
+    }
+
+    img.ss-code,
+    .responsive-left p {
+        width: 100%;
+    }
+
+    .project-img img:hover {
+        transform: translateY(calc(-100% + 300px));
+    }
+
+    .responsive-left p {
+        max-width: 100%;
+    }
+
+    header .navbar,
+    .get-contact {
+        display: none;
+    }
+
+    .techno-title h2,
+    .experience-title h2,
+    .responsive-left h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .bars {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .line {
+        width: 40px;
+        background-color: #fff;
+        height: 3px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .slider-texts {
+        padding: 0 .2rem;
+        line-height: 1.3;
+    }
+
+    .filters li a {
+        margin: 15px 25px 0 0;
+    }
+
+    .filters ul {
+        flex-wrap: wrap;
+        gap: .3rem;
+    }
+
+    .responsive-left p,
+    .accordion-texts p {
+        text-align: center;
+    }
+
+    .project-img {
+        max-height: 300px;
+    }
+
+    .accordion-texts {
+        flex-direction: column;
+    }
+
+    .accordion-desc {
+        padding: 1rem .5rem;
+    }
+
+    .accordion-details {
+        justify-content: center;
+    }
+
+    .exp-title,
+    .contact-left {
+        gap: 1rem;
+    }
+
+    .contact-left {
+        margin-bottom: 2rem;
+    }
+
+    .accordion-right {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .project-img {
+        overflow: scroll;
+    }
+
 }
