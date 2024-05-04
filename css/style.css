@@ -839,6 +839,7 @@ a.cv {
 .contact-right input,
 .contact-right textarea {
     transition: .4s all ease;
+    color: #fff;
 }
 
 .contact-right input:focus,
