@@ -31,20 +31,22 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row gy-3">
-                        <div class="col-lg-12">
-                            <input type="text" placeholder="Name, Surname">
+                    <form name="contactModal" method="POST" data-netlify="true">
+                        <div class="row gy-3">
+                            <div class="col-lg-12">
+                                <input name="nameSurname" type="text" placeholder="Name, Surname">
+                            </div>
+                            <div class="col-lg-12">
+                                <input name="email" type="email" placeholder="Your Email">
+                            </div>
+                            <div class="col-lg-12">
+                                <input name="number" type="number" placeholder="Your number">
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="submit">Submit</button>
+                            </div>
                         </div>
-                        <div class="col-lg-12">
-                            <input type="email" placeholder="Your Email">
-                        </div>
-                        <div class="col-lg-12">
-                            <input type="number" placeholder="Your number">
-                        </div>
-                        <div class="col-lg-12">
-                            <button>Submit</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
