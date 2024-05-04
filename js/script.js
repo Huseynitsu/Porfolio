@@ -51,4 +51,8 @@ $(document).ready(function () {
         $(".accordion-desc").not($accDesc).slideUp();
         $(".accordion").not($(this)).removeClass("active");
     });
+
+    $(".bars").click(function(){
+        $(".nav-menu").toggleClass("active");
+    });
 });
