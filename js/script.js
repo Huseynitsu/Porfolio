@@ -56,4 +56,15 @@ $(document).ready(function () {
         $(".nav-menu").toggleClass("active");
         $("body").toggleClass("overflow-hidden");
     });
+
+    $(document).mouseup(function(e) {
+        let container = $(".nav-menu");
+    
+        // Menü dışında bir yere tıklanırsa ve menü açıksa
+        if (!container.is(e.target) && container.has(e.target).length === 0 && container.hasClass("active")) {
+            container.removeClass("active");
+            $("body").removeClass("overflow-hidden");
+        }
+    });
+    
 });
