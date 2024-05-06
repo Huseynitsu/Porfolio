@@ -944,7 +944,7 @@ a.cv {
 
     header {
         padding: 1.5rem 0;
-        max-height: 90px;
+        max-height: 122px;
     }
 
     img.ss-code,
@@ -1041,6 +1041,7 @@ a.cv {
     }
 
     .nav-menu {
+        border-radius: .5rem;
         display: block;
         background-color: #fff;
         height: 100vh;

@@ -54,5 +54,6 @@ $(document).ready(function () {
 
     $(".bars").click(function(){
         $(".nav-menu").toggleClass("active");
+        $("body").toggleClass("overflow-hidden");
     });
 });
